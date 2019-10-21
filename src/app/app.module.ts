@@ -7,14 +7,6 @@ import { AppRoutingModule } from "./app-routing.module";
 // Import angular-fusioncharts
 import { FusionChartsModule } from "angular-fusioncharts";
 
-// Import FusionCharts library
-// import FusionCharts from "fusioncharts/core";
-
-// // // Load FusionCharts Individual Charts
-// import MsColumn2d from "fusioncharts/viz/mscolumn2d";
-// import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-// // // Use fcRoot function to inject FusionCharts library, and the modules you want to use
-// FusionChartsModule.fcRoot(FusionCharts, MsColumn2d, FusionTheme);
 // Load FusionCharts
 import * as FusionCharts from "fusioncharts";
 // Load Charts module
@@ -24,6 +16,7 @@ import * as FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
 
 // Add dependencies to FusionChartsModule
 FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
+
 import {
   MatButtonModule,
   MatDividerModule,
@@ -41,7 +34,7 @@ import { FusionchartsComponent } from "./fusioncharts/fusioncharts.component";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FusionChartsModule, // Include in imports
+    FusionChartsModule,
     MatToolbarModule,
     MatMenuModule,
     MatIconModule,
